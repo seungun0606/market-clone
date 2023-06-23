@@ -24,6 +24,18 @@ footer {
   cursor: pointer;
 }
 
+@keyframes icons-dong-dong {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons__desc {
   margin-top: 5px;
   font-weight: bold;
@@ -32,4 +44,7 @@ footer {
 
 .footer-icons__img {
   width: 30px;
+}
+.footer-icons:hover .footer-icons__img {
+  animation: 2s icons-dong-dong;
 }
